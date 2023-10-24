@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs')  %>
+<div class="title">
+    <div class="title__left">
+        <h1>Find your perfect recipe for today ❤️</h1>
+        <p>Easy recipes for any occasion</p>
+        
+        <form method="post">
+            <div class="search-field">
+                <input type="text" placeholder="Search" name="query">
+                <button class="btn" type="submit" formaction="/search">Browse dishes</button>
+            </div>
+        </form>
+    </div>
+    <div class="title__right"></div>
+</div>
+
+<%- include('partials/footer.ejs')  %>
+    

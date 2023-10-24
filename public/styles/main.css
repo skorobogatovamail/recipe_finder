@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-position: inside; 
+}
+
+main{
+    height: 100%;
+    color:  #6A9C89;
+    font-family: 'Poppins', sans-serif;/* 'Nunito', sans-serif; */
+   
+}
+.title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.title__left{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+
+    padding: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+}
+.title__right{
+    background-image: url('/images/im4.jpg');
+    background-size: cover;  
+    background-position: center;
+    height: 100vh;
+}
+
+
+.search-field {
+    display: flex;
+    border: solid 3px #CD5C08;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.search-field input {
+    border: none;
+    flex: 1;
+    border-radius: 50px;
+    padding: 0 20px;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    background-color: #CD5C08 ;
+    border-radius: 50px;
+    padding: 0 20px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #843c05;
+}
+
+
+
+
+
+
+.container {
+    padding: 5% ;
+    text-align: center;
+}
+.upper-part {
+    margin-bottom: 50px;
+}
+.upper-part h1 {
+    margin-bottom: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.cards__title {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 1.25rem;
+
+}
+
+.cards__area {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 5px;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 10px;
+
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card__body{
+    border-radius: 10px 10px 0 0 ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+
+}
+.card__title{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 0 20px;
+}
+
+
+.instructions-title {
+    padding: 10px 20px;
+    background-color: #CD5C08;
+    display: inline-block;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.recipe-instructions-content{
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+
+

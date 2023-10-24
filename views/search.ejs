@@ -1,0 +1,58 @@
+<%- include('partials/header.ejs')  %>
+<div class="container">
+    <div class="upper-part">
+        <h1>Find fantastic meals for your ingredients</h1>
+        <form method="post">
+            <div class="search-field">
+                <input type="text" placeholder="Search" name="query">
+                <button class="btn" type="submit" formaction="/search">Browse dishes</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <div class="cards">
+        <div class="cards__title">
+            <h2>Your search results:</h2>
+
+        </div>
+        
+        <div class="cards__area">
+            <% if (locals.hits) {%>
+                <% for (let i = 0; i < hits.length; i++) {%>
+                    
+                    <div class="card">
+                        <div class="card__body" style="background-image: url('<%= hits[i].recipe.image %>');"></div>
+                        <div class="card__title"><%= hits[i].recipe.label %></div>
+                        <div class="recipe-instructions">
+                            <p class="instructions-title">Instructions:</p>
+                            <div class="recipe-instructions-content">
+                                <ul>
+                                    <% for (let j = 0; j < hits[i].recipe.ingredients.length; j++) {%>
+                                        <li><%= hits[i].recipe.ingredients[j].text %></li>
+                                    <% } %>
+                                </ul>
+                                
+                            </div>
+                            
+
+                        </div>
+                        
+                    
+                    </div>
+                <% } %>
+            <% } %>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<%- include('partials/footer.ejs')  %>
+
+
+
+
