@@ -17,9 +17,6 @@ app.get('/', (req, res) => {
     res.render('index.ejs');
 });
 
-// app.get('/', (req, res) => {
-//     res.render('search.ejs');
-// });
 
 app.post('/search', async (req, res) => {
     let query = req.body.query;
