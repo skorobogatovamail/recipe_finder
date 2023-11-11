@@ -1,3 +1,4 @@
+import 'dotenv/config.js';
 import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
@@ -5,8 +6,9 @@ import axios from "axios";
 const app = express();
 const port = 3000;
 
-const appId = "69aded04";
-const appKey = "11750d7a7a9050851c7216c465aa60b1";
+const appKey = process.env.APP_KEY;
+const appId = process.env.APP_ID;
+
 const basicURL = "https://api.edamam.com/api/recipes/v2";
 const URL = `${basicURL}?type=public&app_id=${appId}&app_key=${appKey}`;
 
